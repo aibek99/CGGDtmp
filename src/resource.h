@@ -37,7 +37,6 @@ namespace cg
 	inline resource<T>::resource(size_t size)
 	{
 		data.resize(size);
-		stride = size;
 	}
 	template<typename T>
 	inline resource<T>::resource(size_t x_size, size_t y_size)
@@ -62,7 +61,7 @@ namespace cg
 	template<typename T>
 	inline T& resource<T>::item(size_t x, size_t y)
 	{
-		return data.at(y * stride + x);
+		return data.at(x + y * stride);
 	}
 	template<typename T>
 	inline size_t resource<T>::get_size_in_bytes() const
@@ -89,7 +88,7 @@ namespace cg
 		};
 		float3 to_float3() const
 		{
-			return float3{r, g, b};
+			return float3{this->r, this->g, this->b};
 		}
 		float r;
 		float g;
@@ -100,11 +99,10 @@ namespace cg
 	{
 		static unsigned_color from_color(const color& color)
 		{
-			unsigned_color out{};
-			out.r = std::clamp(static_cast<int>(255.f * color.r), 0, 255);
-			out.g = std::clamp(static_cast<int>(255.f * color.g), 0, 255);
-			out.b = std::clamp(static_cast<int>(255.f * color.b), 0, 255);
-			return out;
+			return unsigned_color{
+					(uint8_t) std::clamp(static_cast<int>(255.f * color.r), 0, 255),
+					(uint8_t) std::clamp(static_cast<int>(255.f * color.r), 0, 255),
+					(uint8_t) std::clamp(static_cast<int>(255.f * color.r), 0, 255)};
 		};
 		static unsigned_color from_float3(const float3& color)
 		{
@@ -112,11 +110,13 @@ namespace cg
 		};
 		float3 to_float3() const
 		{
+
 			return float3{
-					static_cast <float>(r),
-					static_cast <float>(g),
-					static_cast <float>(b)
-			} / 255.f;
+						   static_cast<float>(r),
+						   static_cast<float>(g),
+						   static_cast<float>(b),
+				   } /
+				   255.f;
 		};
 		uint8_t r;
 		uint8_t g;
@@ -126,7 +126,6 @@ namespace cg
 
 	struct vertex
 	{
-		// TODO Lab: 1.03 Implement `cg::vertex` struct
 		float x;
 		float y;
 		float z;
@@ -135,17 +134,18 @@ namespace cg
 		float nz;
 		float u;
 		float v;
+
 		float ambient_r;
 		float ambient_g;
 		float ambient_b;
+
 		float diffuse_r;
 		float diffuse_g;
 		float diffuse_b;
+
 		float emissive_r;
 		float emissive_g;
 		float emissive_b;
-
 	};
 
 }// namespace cg
-
