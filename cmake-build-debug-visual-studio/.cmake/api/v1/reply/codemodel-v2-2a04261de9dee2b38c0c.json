@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Computer graphics in Game development",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DirectX12::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DirectX12-Debug-b3d6d38eadfb6def45af.json",
+					"name" : "DirectX12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Rasterization::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Rasterization-Debug-70d8c615867361b8f90a.json",
+					"name" : "Rasterization",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Raytracing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Raytracing-Debug-6be21bf3437e2c2e9b55.json",
+					"name" : "Raytracing",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio",
+		"source" : "D:/E6. CGGD/CGGD_temp1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
