@@ -24,3 +24,9 @@
 25	2277	7000963649714486	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	b01cd839a17001cd
 16	2492	7000963651875592	CMakeFiles/Rasterization.dir/src/settings.cpp.obj	ff35f53d22a5841b
 2492	5727	7000963682736541	Rasterization.exe	b9c43a3f43a5ef06
+1	1513	7001528074510270	CMakeFiles/Rasterization.dir/src/main.cpp.obj	abfb409be7cc7ad6
+7	1516	7001528074550288	CMakeFiles/Rasterization.dir/src/renderer/renderer.cpp.obj	b2f7a477f19fc6f2
+20	1529	7001528074651266	CMakeFiles/Rasterization.dir/src/utils/resource_utils.cpp.obj	10c10fcfa60a54be
+14	1696	7001528076368158	CMakeFiles/Rasterization.dir/src/renderer/rasterizer/rasterizer_renderer.cpp.obj	286dc2d930bd81f9
+26	2270	7001528082103539	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	b01cd839a17001cd
+2270	2814	7001528086545961	Rasterization.exe	b9c43a3f43a5ef06
