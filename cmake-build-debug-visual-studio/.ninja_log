@@ -1,13 +1,13 @@
 # ninja log v5
 3427	6416	6984137914546462	CMakeFiles/DirectX12.dir/src/world/model.cpp.obj	1f8f3fe89510a475
-1	1162	6996498042177071	CMakeFiles/Rasterization.dir/src/world/camera.cpp.obj	2073d5f4f122ca50
-1	1732	6998991206196029	CMakeFiles/Rasterization.dir/src/renderer/rasterizer/rasterizer_renderer.cpp.obj	e060c8996650e524
-2	2683	6984136724853628	CMakeFiles/Rasterization.dir/src/main.cpp.obj	9c9a3b86bf1e2a14
-27	2700	6984136725073044	CMakeFiles/Rasterization.dir/src/renderer/renderer.cpp.obj	d4a059ce2d6de59f
-2175	2694	6998991215253486	Rasterization.exe	a8d8518fc5c0e33c
-8	2174	6998991210613219	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	fad8a2d5158681f7
-10	2898	6984142923585213	CMakeFiles/Rasterization.dir/src/settings.cpp.obj	e42b9b674a3ed70d
-1389	3813	6984136736391837	CMakeFiles/Rasterization.dir/src/utils/resource_utils.cpp.obj	b841dbe52d211053
+24	978	7019121748422991	CMakeFiles/Rasterization.dir/src/world/camera.cpp.obj	5f80031ff57b3411
+17	1810	7019121756800953	CMakeFiles/Rasterization.dir/src/renderer/rasterizer/rasterizer_renderer.cpp.obj	a1aa0a938d3d4ce4
+1	1583	7019121754498688	CMakeFiles/Rasterization.dir/src/main.cpp.obj	af281c416831e77
+12	1688	7019121755576913	CMakeFiles/Rasterization.dir/src/renderer/renderer.cpp.obj	8b5b11326fcca22c
+2328	3168	7019122095660925	Rasterization.exe	b9c43a3f43a5ef06
+978	2941	7019121768120900	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	d819e88912557e73
+1	2327	7019122088694005	CMakeFiles/Rasterization.dir/src/settings.cpp.obj	5f69f677950e1d49
+33	1605	7019121754760796	CMakeFiles/Rasterization.dir/src/utils/resource_utils.cpp.obj	cf8464bbdca9e3eb
 49	3423	6984137884609997	CMakeFiles/DirectX12.dir/src/world/camera.cpp.obj	8a55c0bd5cc595a2
 2	3608	6984137886397042	CMakeFiles/DirectX12.dir/src/win_main.cpp.obj	af22a38b1fb450b7
 35	4473	6984137895094316	CMakeFiles/DirectX12.dir/src/settings.cpp.obj	ebe9b8b7bb87a3e1
@@ -16,11 +16,3 @@
 21	5063	6984137901008512	CMakeFiles/DirectX12.dir/src/renderer/dx12/dx12_renderer.cpp.obj	9afcbc763386eb32
 3611	5749	6984137907892923	CMakeFiles/DirectX12.dir/src/utils/resource_utils.cpp.obj	3ce74430adf70fb5
 6420	7871	6984137928829242	DirectX12.exe	6c22f3085f63d228
-1	1617	7000963643014156	CMakeFiles/Rasterization.dir/src/main.cpp.obj	abfb409be7cc7ad6
-11	1626	7000963643144171	CMakeFiles/Rasterization.dir/src/renderer/renderer.cpp.obj	b2f7a477f19fc6f2
-31	1636	7000963643254175	CMakeFiles/Rasterization.dir/src/utils/resource_utils.cpp.obj	10c10fcfa60a54be
-6	1714	7000963644069434	CMakeFiles/Rasterization.dir/src/renderer/rasterizer/rasterizer_renderer.cpp.obj	286dc2d930bd81f9
-1617	2114	7000963648101675	CMakeFiles/Rasterization.dir/src/world/camera.cpp.obj	508c977f3fbd4240
-25	2277	7000963649714486	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	b01cd839a17001cd
-16	2492	7000963651875592	CMakeFiles/Rasterization.dir/src/settings.cpp.obj	ff35f53d22a5841b
-2492	5727	7000963682736541	Rasterization.exe	b9c43a3f43a5ef06

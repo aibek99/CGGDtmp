@@ -105,25 +105,25 @@ LRESULT cg::utils::window::window_proc(HWND hwnd, UINT message, WPARAM wparam, L
 			}
 			return 0;
 		}
-			case WM_KEYUP: {
-				if (renderer)
+		case WM_KEYUP: {
+			if (renderer)
+			{
+				switch (static_cast<UINT8>(wparam))
 				{
-					switch (static_cast<UINT8>(wparam))
-					{
-						case 87:// w
-							window::pressed_w = false;
-							break;
-						case 83:// s
-							window::pressed_s = false;
-							break;
-						case 68:// d
-							window::pressed_d = false;
-							break;
-						case 65:// a
-							window::pressed_a = false;
-							break;
-					}
+					case 87:// w
+						window::pressed_w = false;
+						break;
+					case 83:// s
+						window::pressed_s = false;
+						break;
+					case 68:// d
+						window::pressed_d = false;
+						break;
+					case 65:// a
+						window::pressed_a = false;
+						break;
 				}
+			}
 		}
 			return 0;
 

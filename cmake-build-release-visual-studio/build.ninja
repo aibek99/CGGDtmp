@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: Computer graphics in Game development
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:\E5.$ CGGD\CGGDtmp\cmake-build-debug-visual-studio\
+cmake_ninja_workdir = D$:\E5.$ CGGD\CGGDtmp\cmake-build-release-visual-studio\
 # =============================================================================
 # Object build statements for EXECUTABLE target Rasterization
 
@@ -49,63 +49,63 @@ cmake_ninja_workdir = D$:\E5.$ CGGD\CGGDtmp\cmake-build-debug-visual-studio\
 
 build cmake_object_order_depends_target_Rasterization: phony || CMakeFiles\Rasterization.dir
 
-build CMakeFiles\Rasterization.dir\src\main.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\main.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\main.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\main.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\renderer\rasterizer\rasterizer_renderer.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\rasterizer\rasterizer_renderer.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\renderer\rasterizer\rasterizer_renderer.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\rasterizer\rasterizer_renderer.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src\renderer\rasterizer
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\settings.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\settings.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src\renderer
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\world\camera.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\world\camera.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\world\model.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\world\model.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\Rasterization.dir\
   TARGET_PDB = Rasterization.pdb
 
-build CMakeFiles\Rasterization.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__Rasterization_Debug D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_Rasterization
+build CMakeFiles\Rasterization.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__Rasterization_Release D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_Rasterization
   DEFINES = -DRASTERIZATION -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   OBJECT_FILE_DIR = CMakeFiles\Rasterization.dir\src\utils
@@ -120,9 +120,9 @@ build CMakeFiles\Rasterization.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILE
 #############################################
 # Link the executable Rasterization.exe
 
-build Rasterization.exe: CXX_EXECUTABLE_LINKER__Rasterization_Debug CMakeFiles\Rasterization.dir\src\main.cpp.obj CMakeFiles\Rasterization.dir\src\renderer\rasterizer\rasterizer_renderer.cpp.obj CMakeFiles\Rasterization.dir\src\settings.cpp.obj CMakeFiles\Rasterization.dir\src\renderer\renderer.cpp.obj CMakeFiles\Rasterization.dir\src\world\camera.cpp.obj CMakeFiles\Rasterization.dir\src\world\model.cpp.obj CMakeFiles\Rasterization.dir\src\utils\resource_utils.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+build Rasterization.exe: CXX_EXECUTABLE_LINKER__Rasterization_Release CMakeFiles\Rasterization.dir\src\main.cpp.obj CMakeFiles\Rasterization.dir\src\renderer\rasterizer\rasterizer_renderer.cpp.obj CMakeFiles\Rasterization.dir\src\settings.cpp.obj CMakeFiles\Rasterization.dir\src\renderer\renderer.cpp.obj CMakeFiles\Rasterization.dir\src\world\camera.cpp.obj CMakeFiles\Rasterization.dir\src\world\model.cpp.obj CMakeFiles\Rasterization.dir\src\utils\resource_utils.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
+  LINK_FLAGS = /machine:X86 /INCREMENTAL:NO /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\Rasterization.dir
   POST_BUILD = cd .
@@ -141,63 +141,63 @@ build Rasterization.exe: CXX_EXECUTABLE_LINKER__Rasterization_Debug CMakeFiles\R
 
 build cmake_object_order_depends_target_Raytracing: phony || CMakeFiles\Raytracing.dir
 
-build CMakeFiles\Raytracing.dir\src\main.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\main.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\main.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\main.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\renderer\raytracer\raytracer_renderer.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\raytracer\raytracer_renderer.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\renderer\raytracer\raytracer_renderer.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\raytracer\raytracer_renderer.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src\renderer\raytracer
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\settings.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\settings.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src\renderer
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\world\camera.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\world\camera.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\world\model.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\world\model.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\Raytracing.dir\
   TARGET_PDB = Raytracing.pdb
 
-build CMakeFiles\Raytracing.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__Raytracing_Debug D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_Raytracing
+build CMakeFiles\Raytracing.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__Raytracing_Release D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_Raytracing
   DEFINES = -DRAYTRACING -D_CRT_SECURE_NO_WARNINGS
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -openmp -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -openmp -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   OBJECT_FILE_DIR = CMakeFiles\Raytracing.dir\src\utils
@@ -212,9 +212,9 @@ build CMakeFiles\Raytracing.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Raytracing.exe
 
-build Raytracing.exe: CXX_EXECUTABLE_LINKER__Raytracing_Debug CMakeFiles\Raytracing.dir\src\main.cpp.obj CMakeFiles\Raytracing.dir\src\renderer\raytracer\raytracer_renderer.cpp.obj CMakeFiles\Raytracing.dir\src\settings.cpp.obj CMakeFiles\Raytracing.dir\src\renderer\renderer.cpp.obj CMakeFiles\Raytracing.dir\src\world\camera.cpp.obj CMakeFiles\Raytracing.dir\src\world\model.cpp.obj CMakeFiles\Raytracing.dir\src\utils\resource_utils.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+build Raytracing.exe: CXX_EXECUTABLE_LINKER__Raytracing_Release CMakeFiles\Raytracing.dir\src\main.cpp.obj CMakeFiles\Raytracing.dir\src\renderer\raytracer\raytracer_renderer.cpp.obj CMakeFiles\Raytracing.dir\src\settings.cpp.obj CMakeFiles\Raytracing.dir\src\renderer\renderer.cpp.obj CMakeFiles\Raytracing.dir\src\world\camera.cpp.obj CMakeFiles\Raytracing.dir\src\world\model.cpp.obj CMakeFiles\Raytracing.dir\src\utils\resource_utils.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
+  LINK_FLAGS = /machine:X86 /INCREMENTAL:NO /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\Raytracing.dir
   POST_BUILD = cd .
@@ -233,72 +233,72 @@ build Raytracing.exe: CXX_EXECUTABLE_LINKER__Raytracing_Debug CMakeFiles\Raytrac
 
 build cmake_object_order_depends_target_DirectX12: phony || CMakeFiles\DirectX12.dir
 
-build CMakeFiles\DirectX12.dir\src\win_main.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\win_main.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\win_main.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\win_main.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\renderer\dx12\dx12_renderer.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\dx12\dx12_renderer.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\renderer\dx12\dx12_renderer.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\dx12\dx12_renderer.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\renderer\dx12
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\utils\window.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\utils\window.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\utils\window.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\utils\window.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\utils
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\settings.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\settings.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\settings.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\renderer\renderer.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\renderer\renderer.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\renderer
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\world\camera.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\world\camera.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\world\camera.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\world\model.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\world\model.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\world\model.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\world
   TARGET_COMPILE_PDB = CMakeFiles\DirectX12.dir\
   TARGET_PDB = DirectX12.pdb
 
-build CMakeFiles\DirectX12.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__DirectX12_Debug D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_DirectX12
+build CMakeFiles\DirectX12.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__DirectX12_Release D$:\E5.$ CGGD\CGGDtmp\src\utils\resource_utils.cpp || cmake_object_order_depends_target_DirectX12
   DEFINES = -DDX12 -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_WARNINGS -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
   INCLUDES = -I"D:\E5. CGGD\CGGDtmp\libs\stb" -I"D:\E5. CGGD\CGGDtmp\libs\tinyobjloader" -I"D:\E5. CGGD\CGGDtmp\libs\linalg" -I"D:\E5. CGGD\CGGDtmp\libs\cxxopts\include" -I"D:\E5. CGGD\CGGDtmp\libs\D3DX12" -I"D:\E5. CGGD\CGGDtmp\src"
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   OBJECT_FILE_DIR = CMakeFiles\DirectX12.dir\src\utils
@@ -313,9 +313,9 @@ build CMakeFiles\DirectX12.dir\src\utils\resource_utils.cpp.obj: CXX_COMPILER__D
 #############################################
 # Link the executable DirectX12.exe
 
-build DirectX12.exe: CXX_EXECUTABLE_LINKER__DirectX12_Debug CMakeFiles\DirectX12.dir\src\win_main.cpp.obj CMakeFiles\DirectX12.dir\src\renderer\dx12\dx12_renderer.cpp.obj CMakeFiles\DirectX12.dir\src\utils\window.cpp.obj CMakeFiles\DirectX12.dir\src\settings.cpp.obj CMakeFiles\DirectX12.dir\src\renderer\renderer.cpp.obj CMakeFiles\DirectX12.dir\src\world\camera.cpp.obj CMakeFiles\DirectX12.dir\src\world\model.cpp.obj CMakeFiles\DirectX12.dir\src\utils\resource_utils.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:windows
+build DirectX12.exe: CXX_EXECUTABLE_LINKER__DirectX12_Release CMakeFiles\DirectX12.dir\src\win_main.cpp.obj CMakeFiles\DirectX12.dir\src\renderer\dx12\dx12_renderer.cpp.obj CMakeFiles\DirectX12.dir\src\utils\window.cpp.obj CMakeFiles\DirectX12.dir\src\settings.cpp.obj CMakeFiles\DirectX12.dir\src\renderer\renderer.cpp.obj CMakeFiles\DirectX12.dir\src\world\camera.cpp.obj CMakeFiles\DirectX12.dir\src\world\model.cpp.obj CMakeFiles\DirectX12.dir\src\utils\resource_utils.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
+  LINK_FLAGS = /machine:X86 /INCREMENTAL:NO /subsystem:windows
   LINK_LIBRARIES = d3d12.lib  dxgi.lib  d3dcompiler.lib  dxguid.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\DirectX12.dir
   POST_BUILD = cd .
@@ -330,7 +330,7 @@ build DirectX12.exe: CXX_EXECUTABLE_LINKER__DirectX12_Debug CMakeFiles\DirectX12
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\E5. CGGD\CGGDtmp\cmake-build-debug-visual-studio" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\E5. CGGD\CGGDtmp\cmake-build-release-visual-studio" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -341,7 +341,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\E5. CGGD\CGGDtmp\cmake-build-debug-visual-studio" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\E5. CGGD\CGGDtmp" -B"D:\E5. CGGD\CGGDtmp\cmake-build-debug-visual-studio""
+  COMMAND = cmd.exe /C "cd /D "D:\E5. CGGD\CGGDtmp\cmake-build-release-visual-studio" && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\E5. CGGD\CGGDtmp" -B"D:\E5. CGGD\CGGDtmp\cmake-build-release-visual-studio""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -363,7 +363,7 @@ build Raytracing: phony Raytracing.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/E5. CGGD/CGGDtmp/cmake-build-debug-visual-studio
+# Folder: D:/E5. CGGD/CGGDtmp/cmake-build-release-visual-studio
 
 build all: phony Rasterization.exe Raytracing.exe DirectX12.exe
 

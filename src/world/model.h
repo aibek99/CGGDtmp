@@ -26,7 +26,6 @@ namespace cg::world
 		const float4x4 get_world_matrix() const;
 
 	protected:
-
 		std::vector<std::shared_ptr<cg::resource<cg::vertex>>> vertex_buffers;
 		std::vector<std::shared_ptr<cg::resource<unsigned int>>> index_buffers;
 		std::vector<std::filesystem::path> textures;

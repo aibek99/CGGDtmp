@@ -1,5 +1,0 @@
-D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio/CMakeFiles/Rasterization.dir
-D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio/CMakeFiles/Raytracing.dir
-D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio/CMakeFiles/DirectX12.dir
-D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
-D:/E6. CGGD/CGGD_temp1/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir

@@ -34,29 +34,28 @@ void cg::renderer::rasterization_renderer::render()
 	auto start = std::chrono::high_resolution_clock::now();
 	rasterizer->clear_render_target({255, 255, 255});
 	auto stop = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<float, std::milli > duration = stop - start;
-	std::cout<<"Clear took "<< duration.count()<< "ms\n";
+	std::chrono::duration<float, std::milli> duration = stop - start;
+	std::cout << "Clear took " << duration.count() << "ms\n";
 
 	float4x4 matrix = mul(camera->get_projection_matrix(), camera->get_view_matrix(), model->get_world_matrix());
-	rasterizer->vertex_shader = [&](float4 vertex, cg::vertex vertex_data){
+	rasterizer->vertex_shader = [&](float4 vertex, cg::vertex vertex_data) {
 		auto processed = mul(matrix, vertex);
 		return std::pair(processed, vertex_data);
 	};
-	rasterizer->pixel_shader = [](cg::vertex vertex_data, float z){
-		return cg::color{ vertex_data.ambient_r, vertex_data.ambient_g, vertex_data.ambient_b};
+	rasterizer->pixel_shader = [](cg::vertex vertex_data, float z) {
+		return cg::color{vertex_data.ambient_r, vertex_data.ambient_g, vertex_data.ambient_b};
 	};
 
 
-
 	start = std::chrono::high_resolution_clock::now();
-	for (size_t shape_id = 0; shape_id < model->get_index_buffers().size(); shape_id++){
+	for (size_t shape_id = 0; shape_id < model->get_index_buffers().size(); shape_id++) {
 		rasterizer->set_vertex_buffer(model->get_vertex_buffers()[shape_id]);
 		rasterizer->set_index_buffer(model->get_index_buffers()[shape_id]);
 		rasterizer->draw(model->get_index_buffers()[shape_id]->get_number_of_elements(), 0);
 	}
 	stop = std::chrono::high_resolution_clock::now();
 	duration = stop - start;
-	std::cout<<"Rendering took "<< duration.count()<< "ms\n";
+	std::cout << "Rendering took " << duration.count() << "ms\n";
 
 	cg::utils::save_resource(*render_target, settings->result_path);
 }

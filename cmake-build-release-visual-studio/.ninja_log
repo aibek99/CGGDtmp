@@ -1,0 +1,17 @@
+# ninja log v5
+16	875	7019122205062419	CMakeFiles/Rasterization.dir/src/world/camera.cpp.obj	52728d8f8e528d30
+38	2588	7019122222382131	CMakeFiles/Rasterization.dir/src/renderer/rasterizer/rasterizer_renderer.cpp.obj	d4f24144e6934697
+1	2197	7019122218433136	CMakeFiles/Rasterization.dir/src/main.cpp.obj	38185eac308393e1
+9	2248	7019122218968003	CMakeFiles/Rasterization.dir/src/renderer/renderer.cpp.obj	ab7531561dcbd1
+5594	6030	7019122256813157	Rasterization.exe	18ddb2fd8a5d7dad
+875	3372	7019122230078942	CMakeFiles/Rasterization.dir/src/utils/resource_utils.cpp.obj	b6f74688f68c4239
+1229	3030	7028390516891756	CMakeFiles/Raytracing.dir/src/utils/resource_utils.cpp.obj	57aa8fb1bff6dc5c
+24	5594	7019122252426928	CMakeFiles/Rasterization.dir/src/settings.cpp.obj	ae26c5baeb35844b
+58	5194	7019122248434428	CMakeFiles/Rasterization.dir/src/world/model.cpp.obj	62bbf0e88d7f660c
+34	1229	7028390498931094	CMakeFiles/Raytracing.dir/src/world/camera.cpp.obj	5d875d919e70910b
+6	1806	7028390504709479	CMakeFiles/Raytracing.dir/src/renderer/raytracer/raytracer_renderer.cpp.obj	cceddc9194e2cf4
+13	1828	7028390504911834	CMakeFiles/Raytracing.dir/src/main.cpp.obj	2439ec59d992a88a
+28	1920	7028390505840667	CMakeFiles/Raytracing.dir/src/renderer/renderer.cpp.obj	ca23b5477386727c
+19	4467	7028390531297770	CMakeFiles/Raytracing.dir/src/world/model.cpp.obj	5a952e4f020c189d
+0	4925	7028390535866408	CMakeFiles/Raytracing.dir/src/settings.cpp.obj	33c9977c15c95b3b
+4925	5618	7028390542768506	Raytracing.exe	207ee8471b2c6a5f
