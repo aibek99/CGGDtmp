@@ -20,9 +20,9 @@ set(SOURCE
         src/world/model.cpp
         src/utils/resource_utils.cpp)
 
-if(MSVC)
+if (MSVC)
     add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-endif()
+endif ()
 
 add_executable(Rasterization src/main.cpp src/renderer/rasterizer/rasterizer_renderer.cpp ${SOURCE})
 target_compile_definitions(Rasterization PUBLIC RASTERIZATION)
@@ -34,7 +34,7 @@ add_executable(Raytracing src/main.cpp src/renderer/raytracer/raytracer_renderer
 target_compile_definitions(Raytracing PUBLIC RAYTRACING)
 target_include_directories(Raytracing PRIVATE ${INCLUDE})
 target_link_libraries(Raytracing PRIVATE OpenMP::OpenMP_CXX)
-set_property(TARGET Raytracing PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
+set_property(TARGET Rasterization PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
 
 add_executable(DirectX12 WIN32 src/win_main.cpp src/renderer/dx12/dx12_renderer.cpp src/utils/window.cpp ${SOURCE})
 target_compile_definitions(DirectX12 PUBLIC DX12 WIN32_LEAN_AND_MEAN NOMINMAX _CRT_SECURE_NO_WARNINGS _UNICODE UNICODE)
